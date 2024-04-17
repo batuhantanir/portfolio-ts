@@ -12,32 +12,23 @@ function GoTopButton({ className }: GoTopButtonProps) {
   };
 
   return (
-    <button
-      onClick={handleClick}
+    <div
       className={twMerge(
-        `
-            hidden
-            sm:block
-            opacity-0
-            fixed
-            z-30
-            bg-primary
-            rounded-full
-            p-2
-            text-white
-            right-5
-            bottom-5
-            transition-all
-            duration-300
-            ease-in-out
-            hover:bg-primary/95
-            hover:rotate-[360deg]
-            `,
+        'hidden sm:block opacity-0  fixed right-5 bottom-5 w-8 h-8 z-[200] transition-all duration-300 ease-in-out',
         className
       )}
     >
-      <BiUpArrowAlt size={24} />
-    </button>
+      <button
+        onClick={handleClick}
+        className={twMerge(
+          'fixed z-30 bg-primary rounded-md p-1 text-white   hover:bg-primary ',
+          'cursor-pointer   z-30 block  -translate-x-0.5 -translate-y-0.5 overflow-hidden border-2 border-neutral-950 transition-all duration-300 ease-in-out   hover:-translate-x-1.5 hover:-translate-y-1.5 active:translate-x-0 active:translate-y-0'
+        )}
+      >
+        <BiUpArrowAlt size={24} />
+      </button>
+      <div className="absolute inset-0  w-full h-full  bg-black rounded-md "></div>
+    </div>
   );
 }
 

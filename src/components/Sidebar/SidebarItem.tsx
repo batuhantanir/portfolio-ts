@@ -18,7 +18,7 @@ function SidebarItem({
       className={twMerge(
         ' z-[1000] flex flex-col-reverse lg:flex-row items-center gap-2 group lg:h-fit p-3.5 sm:p-4 cursor-pointer bg-thirtd rounded-full transition-all duration-300 ease-in-out hover:bg-primary hover:text-white active:bg-primary lg:shadow-md shadow-black group-hover:shadow-xl w-fit lg:w-[3.7rem] lg:hover:w-[100%] h-[3.8rem] hover:h-fit',
         activeSection.toLowerCase() === item.labelName.toLowerCase() &&
-          'bg-primary text-white lg:w-[100%] h-fit '
+          'bg-primary text-white lg:w-fit h-fit '
       )}
       {...props}
       href={`#${item.labelName.toLowerCase()}`}

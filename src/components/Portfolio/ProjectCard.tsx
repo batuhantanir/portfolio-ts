@@ -17,13 +17,13 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className=" size-64 group sticky top-0 sm:relative">
-      <div className="bg-primary text-white flex flex-col gap-1 p-8 h-32 w-full">
+      <div className="bg-primary text-white flex flex-col justify-center gap-1 px-6 py-4 h-32 w-full">
         <span>{title}</span>
         <span className="text-sm italic">{description}</span>
       </div>
       <div>
         <div className="absolute bottom-0 w-full h-full left-0 group-hover:size-32 transition-all duration-500 z-50">
-          <img src={image} alt={title} />
+          <img src={image} alt={title} className="w-full h-full" />
         </div>
         <a
           href={link}

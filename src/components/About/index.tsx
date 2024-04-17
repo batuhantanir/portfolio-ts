@@ -3,10 +3,10 @@ import TiltCard from '@/components/TiltCard';
 import AboutSkillsItem from './AboutSkillsItem';
 
 import Image from '@public/assets/kare.jpg';
-import skillsData from '@/mocks/AboutData';
-import { twMerge } from 'tailwind-merge';
+import { skillsData } from '@/mocks/constants';
 import { IoIosArrowForward } from 'react-icons/io';
 import Container from '../Container';
+import { calcAge, diffDate } from '@/utils/utils';
 
 interface AboutProps {
   aboutIsActive: boolean;
@@ -21,11 +21,10 @@ function About({ aboutIsActive, skillsIsActive }: AboutProps) {
       <Container id="about" active={aboutIsActive}>
         <CompenentHeader title={'about'} />
         <p className="italicfont-lighttext-center">
-          {' '}
-          ay önce başladığım yazılım serüvenime şu anda Medyanes360'da staj
-          görerek ve 42 İstanbul'da eğitim alarak devam ediyorum. Bu zamana
-          kadar bir çok bilgiyi kendi araştırmalarım ve 42 akran öğrenimi metodu
-          ile en iyi şekilde kavradığımı düşünüyorum.
+          {diffDate(new Date('2023-03-01'))} başladığım yazılım serüvenime şu
+          anda Medyanes360'da staj görerek ve 42 İstanbul'da eğitim alarak devam
+          ediyorum. Bu zamana kadar bir çok bilgiyi kendi araştırmalarım ve 42
+          akran öğrenimi metodu ile en iyi şekilde kavradığımı düşünüyorum.
         </p>
         <div className="flex flex-col items-center gap-6">
           <TiltCard className="">
@@ -48,11 +47,12 @@ function About({ aboutIsActive, skillsIsActive }: AboutProps) {
             <ul className="col-span-2 grid lg:grid-cols-2 lg:gap-x-2 lg:gap-y-6">
               <li className=" flex items-center gap-1">
                 <div>{arrowIcon}</div>{' '}
-                <span className="font-semibold">Doğum tarihi:</span> 20 HAZ 2001{' '}
+                <span className="font-semibold">Doğum tarihi:</span> 20 HAZ 2001
               </li>
               <li className=" lg:col-start-2 flex items-center gap-1">
                 <div>{arrowIcon}</div>{' '}
-                <span className="font-semibold">Age:</span> 23{' '}
+                <span className="font-semibold">Age:</span>{' '}
+                {calcAge(new Date('2001-06-20'))}
               </li>
               <li className=" flex items-center gap-1">
                 <div>{arrowIcon}</div>{' '}
