@@ -10,7 +10,7 @@ interface ContainerProps {
 
 function Container({ id, children, className, active }: ContainerProps) {
   return (
-    <div id={id} className="bg-white relative">
+    <div id={id} className="bg-slate-100 relative">
       <div className="container sm:mx-auto ">
         <div
           className={twMerge(
