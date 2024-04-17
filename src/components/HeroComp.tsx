@@ -21,7 +21,7 @@ function HeroComp() {
     <div className='sticky top-0'>
       <div
         id="home"
-        className="flex items-center sticky top-0  bg-cover bg-center w-full h-screen -z-50 transition-all ease-in-out duration-200 before:w-full before:h-full before:content-center before:absolute brightness-[.3]"
+        className="flex items-center sticky top-0  bg-cover bg-center w-full h-screen -z-50 transition-all ease-in-out duration-200 before:w-full before:h-full before:content-center before:absolute brightness-[.18]"
         style={{ backgroundImage: `url(${Background})` }}
       ></div>
       <div
@@ -34,13 +34,13 @@ function HeroComp() {
           Batuhan tanır
         </div>
 
-        <div className="text-3xl text-secondary text-shadow-xs shadow-white/60">
+        <div className="text-3xl text-thirtd text-shadow-xs shadow-secondary">
           I'm{' '}
           <TypeAnimation
             sequence={words}
             wrapper="span"
             speed={1}
-            className="text-primary"
+            className="text-primary shadow-secondary text-shadow-xs"
             repeat={Infinity}
           />
         </div>

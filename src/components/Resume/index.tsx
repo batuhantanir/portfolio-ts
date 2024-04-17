@@ -2,6 +2,7 @@ import { certificates, education, workExperience } from '@/mocks/constants';
 import ResumeItem from './ResumeItem';
 import CompenentHeader from '@/components/CompenentHeader';
 import Container from '../Container';
+import { diffDate } from '@/utils/utils';
 
 function ResumeItemSupport({ item }: { item: any }) {
   return (
@@ -28,8 +29,9 @@ function Resume({ active }: { active: boolean }) {
         <div>
           <ResumeItem title={'Batuhan tanır'} header="Summary">
             <div className="italic mb-3">
-              10 ay önce başladığım yazılım serüvenime şu anda Medyanes360'da
-              staj görerek ve 42 İstanbul'da eğitim alarak devam ediyorum.
+              {diffDate(new Date('2023-03-01'))} başladığım yazılım serüvenime
+              şu anda Medyanes360'da staj görerek ve 42 İstanbul'da eğitim
+              alarak devam ediyorum.
             </div>
             <ul className="list-disc ml-5">
               <li className="list-item">Istanbul, Turkey</li>
