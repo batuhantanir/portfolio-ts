@@ -1,4 +1,5 @@
 import { GoArrowRight } from 'react-icons/go';
+import Image from '../Image';
 
 interface ProjectCardProps {
   title: string;
@@ -22,8 +23,8 @@ function ProjectCard({
         <span className="text-sm italic">{description}</span>
       </div>
       <div>
-        <div className="absolute bottom-0 w-full h-full left-0 group-hover:size-32 transition-all duration-500 z-50">
-          <img src={image} alt={title} className="w-full h-full" />
+        <div className="absolute bottom-0 w-full h-full left-0 group-hover:size-32 transition-all duration-700 z-50">
+          <Image src={image} alt={title} className="w-full h-full" />
         </div>
         <a
           href={link}

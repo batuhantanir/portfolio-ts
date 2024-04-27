@@ -1,9 +1,8 @@
 import { socialMedia } from '@/mocks/constants';
-import Container from './Container';
 
 function Footer() {
   return (
-    <Container id="footer" className="bg-thirtd sticky" active={true}>
+    <section id="footer" className="bg-thirtd relative">
       <footer className="flex flex-col items-center gap-5 pb-32 pt-8 container mx-auto lg:pb-5 ">
         <div className="flex gap-3">
           {socialMedia.map((item, index) => (
@@ -18,7 +17,7 @@ function Footer() {
         </div>
         <div>© Copyright Batuhan tanır.</div>
       </footer>
-    </Container>
+    </section>
   );
 }
 

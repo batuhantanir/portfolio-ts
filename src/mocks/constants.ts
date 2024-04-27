@@ -66,6 +66,7 @@ export const portfolioData = [
     description:
       'Nextjs, Typescript, NextAuth, Nodejs, Expressjs ile yapılmış bir proje. Bir tur sitesi.',
     image: turfest,
+    hash: '',
     link: 'https://tur-fest-ts.vercel.app/',
     linkTitle: 'Projeye git',
   },

@@ -1,28 +1,50 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
-
+import { motion, useAnimation, useInView } from 'framer-motion';
 interface ContainerProps {
   id: string;
   children: React.ReactNode;
   className?: string;
-  active: boolean;
 }
 
-function Container({ id, children, className, active }: ContainerProps) {
+function Container({ id, children, className }: ContainerProps) {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  React.useEffect(() => {
+    if (isInView) {
+      mainControls.start('visible');
+    }
+    console.log('isInView', isInView);
+  }, [isInView]);
+
   return (
-    <div id={id} className="bg-slate-100 relative">
-      <div className="container sm:mx-auto ">
+    <section id={id} className="bg-slate-100 relative">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 200 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.7, delay: 0.3 },
+          },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        className="container sm:mx-auto "
+      >
         <div
+          ref={ref}
           className={twMerge(
             'flex flex-col gap-6 items-center justify-center py-10 transition-all ease-in-out delay-200 duration-500',
-            className,
-            active ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+            className
           )}
         >
           {children}
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
 }
 

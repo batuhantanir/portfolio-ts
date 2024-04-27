@@ -14,7 +14,7 @@ const schema = z.object({
 
 export type FormField = z.infer<typeof schema>;
 
-function Contact({ active }: { active: boolean }) {
+function Contact() {
   const methods = useForm<FormField>({
     defaultValues: { name: '', email: '', message: '' },
     resolver: zodResolver(schema),
@@ -24,7 +24,7 @@ function Contact({ active }: { active: boolean }) {
   };
 
   return (
-    <Container id="contact" active={active}>
+    <Container id="contact">
       <CompenentHeader title="Contact" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full">
         <div className="text-center mt-4 italic">

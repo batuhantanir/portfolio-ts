@@ -21,9 +21,9 @@ function ResumeItemSupport({ item }: { item: any }) {
   );
 }
 
-function Resume({ active }: { active: boolean }) {
+function Resume() {
   return (
-    <Container id="resume" active={active}>
+    <Container id="resume">
       <CompenentHeader title={'resume'} />
       <div className="sm:grid grid-cols-2 gap-4">
         <div>

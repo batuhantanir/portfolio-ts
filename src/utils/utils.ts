@@ -1,7 +1,3 @@
-export const findSection = (section: string, sections: string[]): boolean => {
-  return sections.find((s) => s === section) ? true : false;
-};
-
 export function diffDate(targetDate: Date): string {
   const now = new Date();
   const diff: number = Math.floor(
