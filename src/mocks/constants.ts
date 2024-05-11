@@ -12,10 +12,11 @@ import turfest from '@public/assets/turfest.png';
 import valo from '@public/assets/valo.png';
 import textflix from '@public/assets/textflix.png';
 import terappin from '@public/assets/terappin.png';
-import textGenerator from '@public/assets/text-generator.png';
+// import textGenerator from '@public/assets/text-generator.png';
 import recipe from '@public/assets/recipe.png';
 import memory from '@public/assets/memory.png';
 import markdown from '@public/assets/markdown.png';
+import wecodez from '@public/assets/wecodez.png';
 
 export const socialMedia = [
   {
@@ -61,6 +62,14 @@ export const sidebarData = [
 ];
 
 export const portfolioData = [
+  {
+    title: 'We Codez',
+    description:
+      'Nextjs, Typescript, TailwindCss, Framer motion ile yapılmış bir proje. Bir yazılım şirketi sitesi.',
+    image: wecodez,
+    link: 'https://www.wecodez.com/',
+    linkTitle: 'Projeye git',
+  },
   {
     title: 'Turfest',
     description:
@@ -125,14 +134,14 @@ export const portfolioData = [
     link: 'https://textflix.vercel.app/',
     linkTitle: 'Projeye git',
   },
-  {
-    title: 'Text generator',
-    description:
-      'Vitejs, Redux, ile yapılmış bir proje. Bir metin oluşturucu uygulaması.',
-    image: textGenerator,
-    link: 'https://text-generator-app-black.vercel.app/',
-    linkTitle: 'Projeye git',
-  },
+  // {
+  //   title: 'Text generator',
+  //   description:
+  //     'Vitejs, Redux, ile yapılmış bir proje. Bir metin oluşturucu uygulaması.',
+  //   image: textGenerator,
+  //   link: 'https://text-generator-app-black.vercel.app/',
+  //   linkTitle: 'Projeye git',
+  // },
 ];
 
 export const education = [
