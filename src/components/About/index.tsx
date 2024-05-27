@@ -1,8 +1,6 @@
 import CompenentHeader from '@/components/CompenentHeader';
 import TiltCard from '@/components/TiltCard';
 import AboutSkillsItem from './AboutSkillsItem';
-
-import Image from '@public/assets/kare.jpg';
 import { skillsData } from '@/mocks/constants';
 import { IoIosArrowForward } from 'react-icons/io';
 import Container from '../Container';
@@ -23,7 +21,7 @@ function About() {
       <div className="flex flex-col items-center gap-6">
         <TiltCard className="">
           <img
-            src={Image}
+            src="assets/kare.jpg"
             alt="image"
             className="max-w-[400px] max-h-[400px] w-full lg:w-[250px] xl:w-full rounded-xl shadow-costum"
             draggable="false"

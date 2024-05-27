@@ -7,16 +7,6 @@ import {
   AiOutlineUser,
 } from 'react-icons/ai';
 import { BiBookContent, BiEnvelope } from 'react-icons/bi';
-import billgates from '@public/assets/billgates.png';
-import turfest from '@public/assets/turfest.png';
-import valo from '@public/assets/valo.png';
-import textflix from '@public/assets/textflix.png';
-import terappin from '@public/assets/terappin.png';
-// import textGenerator from '@public/assets/text-generator.png';
-import recipe from '@public/assets/recipe.png';
-import memory from '@public/assets/memory.png';
-import markdown from '@public/assets/markdown.png';
-import wecodez from '@public/assets/wecodez.png';
 
 export const socialMedia = [
   {
@@ -66,7 +56,7 @@ export const portfolioData = [
     title: 'We Codez',
     description:
       'Nextjs, Typescript, TailwindCss, Framer motion ile yapılmış bir proje. Bir yazılım şirketi sitesi.',
-    image: wecodez,
+    image: "assets/wecodez.png",
     link: 'https://www.wecodez.com/',
     linkTitle: 'Projeye git',
   },
@@ -74,7 +64,7 @@ export const portfolioData = [
     title: 'Turfest',
     description:
       'Nextjs, Typescript, NextAuth, Nodejs, Expressjs ile yapılmış bir proje. Bir tur sitesi.',
-    image: turfest,
+    image: "assets/turfest.png",
     hash: '',
     link: 'https://tur-fest-ts.vercel.app/',
     linkTitle: 'Projeye git',
@@ -82,7 +72,7 @@ export const portfolioData = [
   {
     title: 'Terappin',
     description: 'Nextjs ile yapılmış bir proje. Bir terapi sitesi.',
-    image: terappin,
+    image: "assets/terappin.png",
     link: 'https://internship-terapy-project.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -90,7 +80,7 @@ export const portfolioData = [
     title: 'Recipe Site',
     description:
       'Reactjs, Redux, Axios ile yapılmış bir proje. Bir yemek tarifleri sitesi.',
-    image: recipe,
+    image: "assets/recipe.png",
     link: 'https://recipe-site-mauve.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -98,7 +88,7 @@ export const portfolioData = [
     title: 'Memory App',
     description:
       'Vitejs, Redux ile yapılmış bir proje. Bir yemek tarifleri sitesi.',
-    image: memory,
+    image: "assets/memory.png",
     link: 'https://memory-app-orpin.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -106,7 +96,7 @@ export const portfolioData = [
     title: 'Memory App',
     description:
       'Vitejs, Redux, TailwindCss ile yapılmış bir proje. Bir markdown editör.',
-    image: markdown,
+    image: "assets/markdown.png",
     link: 'https://memory-app-7br6.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -114,7 +104,7 @@ export const portfolioData = [
     title: 'Spend Bill Gates Money',
     description:
       'Reactjs, Redux ile yapılmış bir proje. Bill Gatesin parasını harcayabilirsiniz. ',
-    image: billgates,
+    image: "assets/billgates.png",
     link: 'https://spend-bill-gates-money-one.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -122,7 +112,7 @@ export const portfolioData = [
     title: 'Valorant Wiki',
     description:
       'Reactjs, Redux, Axios ile yapılmış bir proje. Valorant oyunu hakkında bilgi alabileceğiniz bir wiki.',
-    image: valo,
+    image: "assets/valo.png",
     link: 'https://valorant-wiki-three.vercel.app/',
     linkTitle: 'Projeye git',
   },
@@ -130,7 +120,7 @@ export const portfolioData = [
     title: 'TextFlix',
     description:
       'Reactjs, Redux, Axios, Formik ile yapılmış bir proje. Bir film sitesi.',
-    image: textflix,
+    image: "assets/textflix.png",
     link: 'https://textflix.vercel.app/',
     linkTitle: 'Projeye git',
   },

@@ -1,6 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
 import { socialMedia } from '@/mocks/constants';
-import Background from '@public/assets/hero.jpg';
 import cv from '@public/assets/cv.pdf';
 import { motion } from 'framer-motion';
 
@@ -13,7 +12,7 @@ function HeroComp() {
       <div className="sticky top-0">
         <div
           className="flex items-center sticky top-0  bg-cover bg-center w-full h-screen -z-50 transition-all ease-in-out duration-200 before:w-full before:h-full before:content-center before:absolute brightness-[.18]"
-          style={{ backgroundImage: `url(${Background})` }}
+          style={{ backgroundImage: `url("/assets/hero.jpg")` }}
           rel="preload"
         ></div>
         <motion.div
